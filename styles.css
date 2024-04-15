@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* Set the default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0; /* Set background color for the body */
+}
+
+.container {
+    max-width: 600px; /* Set maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #fff; /* Set background color for the container */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+input[type="text"] {
+    width: calc(100% - 80px); /* Set width for the input field */
+    padding: 10px; /* Add padding inside the input field */
+    margin-right: 10px; /* Add margin on the right side */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    border: 1px solid #ccc; /* Add border with a light gray color */
+}
+
+button {
+    padding: 10px 20px; /* Add padding inside the button */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    border: none; /* Remove default border */
+    background-color: #007bff; /* Set background color for the button */
+    color: #fff; /* Set text color to white */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.weather-info {
+    margin-top: 20px; /* Add space above the weather information */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    input[type="text"] {
+        width: 70%; /* Adjust width of input field */
+    }
+}
+
+@media (max-width: 576px) {
+    input[type="text"] {
+        width: 100%; /* Adjust width of input field for smaller screens */
+        margin-right: 0; /* Remove right margin for input field */
+    }
+}
